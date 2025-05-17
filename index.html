@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#trainings">Trainings/Seminars</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Job Experience</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="profile">
+      <h1>Jared Cadampog</h1>
+      <img src="C:\Users\Leah\Desktop\jareddddd\3772a7de-eb89-4b4b-84b2-f6bef4be1c1f.jpg" alt="Profile Picture" class="profile-pic" />
+      <p>Hello! I'm excited to start my journey as a web developer.</p>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li tabindex="0" onclick="showDetails('Computer Engineering - CITE Technical Institute Inc. August 2023 - Present')" onkeypress="if(event.key==='Enter'||event.key===' ') showDetails('Computer Engineering - CITE Technical Institute Inc. August 2023 - Present')">Computer Engineering - CITE Technical Institute Inc.</li>
+        <li tabindex="0" onclick="showDetails('High School Diploma - Talamban National High School. July 14, 2023')" onkeypress="if(event.key==='Enter'||event.key===' ') showDetails('High School Diploma - Talamban National High School. July 14, 2023')">High School Diploma - Talamban National High School</li>
+      </ul>
+    </section>
+    <section id="trainings">
+      <h2>Trainings/Seminars</h2>
+      <ul>
+        <li tabindex="0" onclick="showDetails('I study and practice online on website like W3shcool')" onkeypress="if(event.key==='Enter'||event.key===' ') showDetails('I study and practice online on Website like W3shcool')">none</li>
+        
+      </ul>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project" tabindex="0" onclick="showDetails('Portfolio Website built with HTML, CSS, and JS')">Portfolio Website</div>
+      <div class="project" tabindex="0" onclick="showDetails('Task Manager App with local storage')">Task Manager App</div>
+    </section>
+    <section id="experience">
+      <h2>Job Experience</h2>
+      <ul>
+        <li tabindex="0" onclick="showDetails('Waiter at Myeongdong restaurant from Feb 10, 2025 to Apr 10, 2025.')">Waiter - Myeongdong Restaurant</li>
+        <li tabindex="0" onclick="showDetails('Helper at BYJL Furniture, installed tables.')">Helper - BYJL Furniture</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <button id="showContactBtn" type="button">Show Contact Info</button>
+      <div id="contact-info">
+        <p><a class="contact-link" href="mailto:jared.cadamz@gmail.com">Email: jared.cadamz@gmail.com</a></p>
+        <p><a class="contact-link" href="tel:+639660758740">Phone: +63 966 075 8740</a></p>
+      </div>
+    </section>
+  </main>
+  <div id="modal" class="modal" role="dialog" aria-modal="true" tabindex="-1" aria-labelledby="modal-text">
+    <div class="modal-content">
+      <button class="close" onclick="closeModal()" aria-label="Close Modal">×</button>
+      <p id="modal-text"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
